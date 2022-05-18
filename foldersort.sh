@@ -18,7 +18,7 @@ sqlite3 -tabs $db "SELECT c.title,i._id,i.title FROM favorites i INNER JOIN favo
 	fi
 	[ $y -gt $my ] && y=0
 	sqlite3 $db "UPDATE favorites SET cellX=$x,cellY=$y,rank=$k WHERE _id=$r"
-	echo "	$x,$y=$i"
+	echo "	$x,$y:$k=$i"
 	((x=x+1))
 	((k=k+1))
 done
