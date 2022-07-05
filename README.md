@@ -1,5 +1,5 @@
 # TrebuchetSort - Erik Johnson, EkriirkE
- Alphabetically sort items in Trebuchet app folders
+ Alphabetically sort items in Android's Trebuchet app folders
 
 Run as root (in termux).
 
