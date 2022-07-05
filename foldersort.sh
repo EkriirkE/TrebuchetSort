@@ -1,4 +1,5 @@
 #!/bin/bash
+#Erik Johnson - EkriirkE 2022-05-17
 db="/data/data/com.android.launcher3/databases/launcher.db"
 
 read mx my <<< $(sqlite3 -tabs $db "SELECT MAX(cellX),MAX(cellY) FROM favorites WHERE container>0;")
