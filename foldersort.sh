@@ -3,7 +3,7 @@
 
 trebuchet="/data/data/com.android.launcher3"
 grid=$(sed -n 's:.*<string name="idp_grid_name">\(.*\)</string>.*:\1:p' "$trebuchet/shared_prefs/com.android.launcher3.prefs.xml")
-if [ ! -z "$grid" ]; then grid="_$grid"; else grid=""; fi
+[ ! -z "$grid" ] && grid="_$grid"
 echo Using launcher$grid
 db="$trebuchet/databases/launcher$grid.db"
 
