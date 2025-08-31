@@ -2,7 +2,9 @@
  Alphabetically sort items in Android's Trebuchet launcher app folders
 
 Run as root (in termux).  
-`sh foldersort.sh`
+```shell
+sh foldersort.sh
+```
 
 Updates `/data/data/com.android.launcher3/databases/launcher.db`.  cellX and cellY parameters seem to be ignored in folders despite being set properly 
 by Trebuchet (no arbitrary/floating icon placements), and rank is the true sort order.  
