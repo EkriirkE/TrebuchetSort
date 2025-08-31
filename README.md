@@ -1,7 +1,7 @@
 # TrebuchetSort
  Alphabetically sort items in Android's Trebuchet launcher app folders
 
-Run as root (in termux).  
+Run as root (`tsu` in termux).  
 ```shell
 sh foldersort.sh
 ```
